@@ -45,3 +45,8 @@ SELECT `office_address`, COUNT(*) NumeroInsegnanti
 FROM `teachers`
 GROUP BY `office_address`
 HAVING  COUNT(*) > 1;
+
+4
+SELECT `departments`, COUNT(`name`) AS NumeriCorsoLaurea
+FROM `courses`
+GROUP BY `departments`
