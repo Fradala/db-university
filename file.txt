@@ -1,3 +1,7 @@
+
+esercizi con SELECT
+
+
 1
 SELECT `date_of_birth`
 FROM `students`
@@ -33,3 +37,11 @@ FROM `departments`;
 SELECT `name`, `surname`
 FROM `teachers`
 WHERE `phone` IS NULL;
+
+esercizi con GROUP BY
+
+2
+SELECT `office_address`, COUNT(*) NumeroInsegnanti
+FROM `teachers`
+GROUP BY `office_address`
+HAVING  COUNT(*) > 1;
