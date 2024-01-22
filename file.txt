@@ -1,6 +1,9 @@
 1
-
 SELECT `date_of_birth`
 FROM `students`
 WHERE YEAR(`date_of_birth`) = 1990;
 
+8
+SELECT `name`, `surname`
+FROM `teachers`
+WHERE `phone` IS NULL;
