@@ -3,6 +3,12 @@ SELECT `date_of_birth`
 FROM `students`
 WHERE YEAR(`date_of_birth`) = 1990;
 
+4
+SELECT * 
+FROM `courses`
+WHERE `period` = 'I semestre'
+AND `year`= 1;
+
 5
 SELECT *
 FROM `exams`
