@@ -3,6 +3,11 @@ SELECT `date_of_birth`
 FROM `students`
 WHERE YEAR(`date_of_birth`) = 1990;
 
+6
+SELECT `level`
+FROM `degrees`
+WHERE `level` = 'magistrale';
+
 7
 SELECT COUNT(`id`) AS NumeroDipartimanti
 FROM `departments`;
