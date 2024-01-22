@@ -3,6 +3,10 @@ SELECT `date_of_birth`
 FROM `students`
 WHERE YEAR(`date_of_birth`) = 1990;
 
+7
+SELECT COUNT(`id`) AS NumeroDipartimanti
+FROM `departments`;
+
 8
 SELECT `name`, `surname`
 FROM `teachers`
