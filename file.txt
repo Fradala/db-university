@@ -3,6 +3,12 @@ SELECT `date_of_birth`
 FROM `students`
 WHERE YEAR(`date_of_birth`) = 1990;
 
+5
+SELECT *
+FROM `exams`
+WHERE `date` = '2020-06-20'
+AND `hour` > '14:00';
+
 6
 SELECT `level`
 FROM `degrees`
