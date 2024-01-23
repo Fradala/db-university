@@ -64,4 +64,4 @@ GROUP BY `exam_id`;
 4
 SELECT `departments`, COUNT(`name`) AS NumeriCorsoLaurea
 FROM `courses`
-GROUP BY `departments`
+GROUP BY `departments`;
