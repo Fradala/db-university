@@ -1,0 +1,52 @@
+ESERCIZI JOIN
+
+1
+SELECT `students`.`name`, `students`.`surname`
+FROM `students`
+JOIN `department` 
+ON `students`.`id` = `department`.`id`
+JOIN `courses` 
+ON `departments`.`id` = `courses`.`id`
+WHERE `courses`.`name` = 'Economia';
+
+2
+SELECT `courses`.`name`
+FROM `courses`
+JOIN `departments`
+ON `courses`.`department_id` = `departments`.`department_id`
+WHERE `departments`.`name`='Neuroscienze'
+AND `courses`.`level` = 'Magistrale';
+
+3
+SELECT `courses`.`name`
+FROM `courses`
+JOIN `teachers`
+ON `courses`.`teachers_id`= `teachers`.`id`
+WHERE `teachers`.`name` = 'Fulvio Amato';
+
+4
+SELECT `students`.`name`, `students`.`surname`, `course`.`name`, `departments`.`name`
+FROM `students`
+JOIN `exam_student` 
+ON `students`.`id` = `exam_student`.`student_id`
+JOIN`exams`
+ON `exam_student`.`exam_id`= 
+
+5
+SELECT `exams`.`name` AS CorsoLaurea, `courses`.`name` AS Corso, `teachers`.`name`
+FROM `exams`
+JOIN `courses` 
+ON `degrees`.`exams_id` = `courses`.`degree_id`
+JOIN `course_teacher` 
+ON `courses`.`id` = `course_teacher`.`course_id`
+JOIN `teachers` 
+ON `course_teacher`.`teacher_id` = `teachers`.`id`;
+
+6
+SELECT `teachers`.`id`, `departments`.`id`
+FROM `teachers`
+JOIN `course_teacher` 
+ON `teachers`.`id` = `course_teacher`.`teacher_id`
+JOIN `departments` 
+ON `course_teacher`.`departements_id` = `departments`.`id`
+WHERE `departments`.`name` = 'Matematica';
